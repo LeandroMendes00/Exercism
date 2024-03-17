@@ -33,3 +33,28 @@ import {Meu_Valor, soma} from './file';
 console.log(soma(Meu_Valor, 5));
 
 //                                                            --EX2!CONT--
+
+//    
+// Operador AND (E)                                                          --Ex3!--
+let a = true;
+let b = false;
+
+// Retorna true apenas se ambas varáveis forem verdadeiras
+let resultadoAnd = a && b;
+console.log("Resultado do operador AND:", resultadoAnd);
+                        //
+// Operdaor OR (OU)
+let c = true;
+let d = false;
+
+// Retorna verdadeiro se um dos operadores forem verdadeiro, se ambos forem falsos resultado sera falso.
+let resultadoOr = c || d;
+console.log("Resultado do operador OR:", resultadoOr);
+                        //
+//  Operador NOT (NÃO)
+let e = true;
+
+// Inveter o valor da varável
+let resultadoNot = !e;
+console.log("Resultado do operador Not:", resultadoNot);
+//                                                              --Ex3!--
