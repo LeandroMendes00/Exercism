@@ -1,4 +1,4 @@
-//                                                              --Ex1--
+//                                                            --Ex1--
 // Referência a valores diferentes ao longo do tempo.
 
 let minhaPrimeiraVariável = 1;
@@ -11,17 +11,17 @@ const minhaPrimeiraConstante = 10;
 // Não pode ser reatribuído.
 minhaPrimeiraConstante = 20;
 // => TypeError: Atribuição a variável constante.
-//                                                              --Ex1--
+//                                                            --Ex1--
 
 
-//                                                              --Ex2!--    
+//                                                            --Ex2!--    
 function soma(num1, num2) {
     return num1 + num2;
 }
 
 console.log(soma(1, 3));
-//                                                              --Ex2!--
-//                                                            --EX2!CONT--
+//                                                            --Ex2!--
+//                                                          --EX2!CONT--
 export const Meu_Valor = 10;
 
 export function soma(num1, num2) {
@@ -32,10 +32,10 @@ import {Meu_Valor, soma} from './file';
 
 console.log(soma(Meu_Valor, 5));
 
-//                                                            --EX2!CONT--
+//                                                          --EX2!CONT--
 
 //    
-// Operador AND (E)                                                          --Ex3!--
+// Operador AND (E)                                           --Ex3!--
 let a = true;
 let b = false;
 
@@ -57,9 +57,9 @@ let e = true;
 // Inveter o valor da varável
 let resultadoNot = !e;
 console.log("Resultado do operador Not:", resultadoNot);
-//                                                              --Ex3!--
+//                                                            --EX3!--
 
-//                                                              --EX4!--
+//                                                            --EX4!--
 function arredondar(funcao, numero) {
     return funcao(numero);
 }
@@ -77,4 +77,11 @@ console.log(numeroArredondadoParaCima);
 
 const numeroArredondadoParaNúmeroMaisPróximo = arredondar(Math.floor, num1);
 console.log(numeroArredondadoParaNúmeroMaisPróximo);
-//                                                              --EX4!--
+//                                                            --EX4!--
+// Ordem de operações
+    //const result = 3 ** 3 + 9 * 4 / (3 - 1);
+    // => 3 ** 3 + 9 * 4/2
+    // => 27 + 9 * 4/2
+    // => 27 + 18
+    // => 45  
+//                                                          --EX4!CONT--
