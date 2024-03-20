@@ -58,3 +58,23 @@ let e = true;
 let resultadoNot = !e;
 console.log("Resultado do operador Not:", resultadoNot);
 //                                                              --Ex3!--
+
+//                                                              --EX4!--
+function arredondar(funcao, numero) {
+    return funcao(numero);
+}
+
+const num1 = 3.1;
+const num2 = 3.6;
+const num3 = -1.1;
+const num4 = -1.6;
+
+const numeroArredondadoParaBaixo = arredondar(Math.floor, num1);
+console.log(numeroArredondadoParaBaixo);
+
+const numeroArredondadoParaCima = arredondar(Math.ceil, num1);
+console.log(numeroArredondadoParaCima);
+
+const numeroArredondadoParaNúmeroMaisPróximo = arredondar(Math.floor, num1);
+console.log(numeroArredondadoParaNúmeroMaisPróximo);
+//                                                              --EX4!--
