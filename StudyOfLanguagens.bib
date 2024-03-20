@@ -14,7 +14,7 @@ Declarações de Função
         outro arquivo pode importá-los usando a (import palavra-chave) |sistemas de módulos|   
                                                           --EX2!CONT--
 
-//                                                          --EX3!--
+                                                            --EX3!--
 Booleano 
     Representa um de dois valores: true ou false, sendo operadores lógicos ( !, &&, || ) usados com valores booleanos e 
     retornam um valor booleano.
@@ -22,3 +22,17 @@ Booleano
     || OR(OU): Retorna verdadeiro se pelo menos um dos operandos for verdadeiro, se ambos forem falsos resultado sera falso.
     ! NOT(NÃO): Inverte o valor do operando, se for verdadeiro "not" retorna falso e se for falso "not" retorna verdadeiro.
                                                             --EX3!--
+
+                                                            --EX4!-- 
+Números
+    Muitas linguagens, possuem tipos numéricos específicos para representar diferente tipos de números, mas o JS possui apenas dois:
+        Number: tipo de dados numérico no formato de ponto flutuante de 64 bits (IEE 754).
+          exemplos: -6, -2.4, 0, 0.1, 1, 3.14, 16.984025, 25.
+        Bigint: tipo de dados numéricos que pode representar números inteiros no formato de precisão arbitrária.
+          exemplos: -12n, 0, e 9007199254540991n.
+            
+        OBJETO GLOBAL INTEGRADO: !MATH! que fornece várias funções de arredondmento, arredondar
+         para baixo (Math.floor) ou para cima (Math.ceil) números decimais para números inteiros, (Math.round) arredonda 
+         para o número inteiro mais próximo, (Math.trunc) remove qualquer coisa após a vírgula sem arredondamento.
+                                                                                                                  20/03/2024
+                                                            --EX4!--
