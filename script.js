@@ -85,3 +85,9 @@ console.log(numeroArredondadoParaNúmeroMaisPróximo);
     // => 27 + 18
     // => 45  
 //                                                          --EX4!CONT--
+
+//                                                            --EX5!--
+const letras = 'Hello, World!';
+            /* "Hello, World!" */
+console.log(letras);
+//                                                            --EX5!--
