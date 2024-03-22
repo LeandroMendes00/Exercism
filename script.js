@@ -22,6 +22,29 @@ function soma(num1, num2) {
 console.log(soma(1, 3));
 //                                                            --Ex2!--
 //                                                          --EX2!CONT--
+// Definição da Função ( function exemplo(mensagem) {...}) :
+// Nome da função: EXEMPLO
+// Parênteses (): Parâmetros são variáveis que recebem valores passados quando a função é chamada |MENSAGEM|
+// Corpo da função: O corpo da função é delimitado por chaves {}.
+// Instruções: Código que realizam as operações desejadas dentro da função `{}`
+// Retorno (opcional): `return` é usada para especificar o valor retornado pela função. 
+
+// Definição da função chamada 'exemplo'.
+function exemplo(mensagem) {
+    // declara uma variável local chamada exp, atribui a ela o valor "BOOH@!", essa variável só é acessível dentro do escopo da função exemplo.
+    const exp = "BOOH@!" 
+    // RETURN esta retornando a concatenação da variável mensagem(que é o parâmetro da função, o valor passado quando a função é chamada) 
+        // com um espaço em branco e o valor da variável exp.
+    return mensagem + " " + exp; 
+}
+// Exemplo de uso da função
+// Declara uma chamada constante mensagemDoExemplo e atribui a ela o valor retornado pela função exemplo quando chamada com o argumento "KLBOOH@!". 
+const mensagemDoExemplo = exemplo("KLBOOH@!");
+// Resultado
+console.log(mensagemDoExemplo);
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+                                          
 export const Meu_Valor = 10;
 
 export function soma(num1, num2) {
