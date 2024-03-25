@@ -1,3 +1,55 @@
+//                                                             Basic
+// Sintaxe de uma função
+// Função que retorna a soma de dois números
+function addNum(a, b) {
+    return a + b;
+}
+console.log(addNum(1, 5));
+
+// Sintaxe de declaração de parâmetros
+// Função que retornar o dobro do número passado como parâmetro
+function doubleNum(num) {
+    return num * 2;
+}
+console.log(doubleNum(2))
+
+// Sintaxe de uso de métodos de string 
+// Método que retorna o primeiro caractere de uma string
+function PrimeiroCaractere(text) {
+    return text[0];
+}
+const minhaString = "Segunda-feira!";
+console.log(PrimeiroCaractere(minhaString))
+
+
+// Semântica de uma função 
+//Função que calcula a média de três números
+function calculaNum(num1, num2, num3) {
+    return (num1 +  num2 + num3);
+}
+console.log(calculaNum(1, 2, 3))
+
+// Semãntica de uma unfção de formatação de texto
+// Função que formata um string para iniciar letras maiúscula
+function  formataText(text) {
+    // return text.toUpperCase();
+    return text.charAt(0).toUpperCase() + text.slice(1);
+}
+const  meuTexto = "março dia 25 de 2024";
+console.log(formataText(meuTexto));
+
+// Semântica de validação
+// Função que verifica se um número é par
+function check(number) {
+    if (number % 2 === 0) {
+       return "Número PAR" 
+    } else  {
+       return "Número IMPAR"
+    }
+}
+console.log(check(4));
+
+
 //                                                            --Ex1--
 // Referência a valores diferentes ao longo do tempo.
 
