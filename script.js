@@ -49,6 +49,55 @@ function check(number) {
 }
 console.log(check(4));
 
+// Fornecer identificadores únicos e imutáveis, Symbol é uma ferramenta poderosa em JavaScript que pode ajudar a evitar colisões de nomes, 
+// criar propriedades privadas para fornecer uma maneira única de identificar e marcar valores em seu código.
+
+ const cadastro1 = Symbol ("cadt1");
+ const cadastro2 = Symbol ("cadt2");
+ const cadastro3 = Symbol ("cadt3");
+ const cadastro4 = Symbol ("cadt4");
+
+const cadastro = {};
+
+cadastro[cadastro1] = {
+  nome: "Leandro",
+  idade: 23,
+  salario: 40.000,
+  andar: 5
+};
+
+cadastro[cadastro2] = {
+  nome: "Joao",
+  idade: 70,
+  salario: 5.000,
+  andar: 1,
+};
+
+cadastro[cadastro3] = {
+  nome: "joana",
+  idade: 18,
+  salario: 2.500,
+  andar: 3
+};
+
+cadastro[cadastro4] = {
+  nome: "Leticia",
+  idade: 25,
+  salario:16.000,
+  andar: 2
+};
+
+function informacoesDoMoradores(cadastro, chave) {
+  const morador = cadastro[chave];
+  if (morador) {
+    console.log (`${morador.nome} mora no andar ${morador.andar}, tem ${morador.idade} anos e tem uma renda de R$ ${morador.salario.toFixed(2)}.`)
+  } else {
+    console.log("Morador não encontrado.");
+  }
+}
+
+informacoesDoMoradores(cadastro,cadastro1);
+
 
 //                                                            --Ex1--
 // Referência a valores diferentes ao longo do tempo.
