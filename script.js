@@ -59,6 +59,7 @@ console.log(check(4));
 
 const cadastro = {};
 
+// Objetos e Propriedades:
 cadastro[cadastro1] = {
   nome: "Leandro",
   idade: 23,
@@ -89,6 +90,7 @@ cadastro[cadastro4] = {
 
 function informacoesDoMoradores(cadastro, chave) {
   const morador = cadastro[chave];
+//Blocos de Códigos
   if (morador) {
     console.log (`${morador.nome} mora no andar ${morador.andar}, tem ${morador.idade} anos e tem uma renda de R$ ${morador.salario.toFixed(2)}.`)
   } else {
@@ -159,7 +161,11 @@ console.log(soma(Meu_Valor, 5));
 //                                                          --EX2!CONT--
 
 //    
-// Operador AND (E)                                           --Ex3!--
+//                                                            --Ex3!--
+// Operador AND (E)   
+// Instruções Simples
+// Declarações de Variáveis
+// Expressões
 let a = true;
 let b = false;
 
